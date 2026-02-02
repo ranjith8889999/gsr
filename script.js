@@ -170,3 +170,64 @@ window.addEventListener('load', () => {
         document.body.style.opacity = '1';
     }, 100);
 });
+
+// Modal functionality for gallery images and videos
+const modal = document.getElementById('mediaModal');
+const modalImg = document.getElementById('modalImage');
+const modalVideo = document.getElementById('modalVideo');
+const modalVideoSource = document.getElementById('modalVideoSource');
+const modalClose = document.querySelector('.modal-close');
+
+// Add click event to all gallery items
+galleryItems.forEach(item => {
+    item.addEventListener('click', (e) => {
+        e.preventDefault();
+        
+        // Check if item contains an image or video
+        const img = item.querySelector('img');
+        const video = item.querySelector('video source');
+        
+        modal.style.display = 'block';
+        
+        if (video) {
+            // Show video in modal
+            modalImg.style.display = 'none';
+            modalVideo.style.display = 'block';
+            modalVideoSource.src = video.src;
+            modalVideo.load();
+        } else if (img) {
+            // Show image in modal
+            modalVideo.style.display = 'none';
+            modalImg.style.display = 'block';
+            modalImg.src = img.src;
+        }
+        
+        // Prevent body scroll when modal is open
+        document.body.style.overflow = 'hidden';
+    });
+});
+
+// Close modal when clicking the X button
+modalClose.addEventListener('click', () => {
+    modal.style.display = 'none';
+    modalVideo.pause();
+    document.body.style.overflow = 'auto';
+});
+
+// Close modal when clicking outside the image/video
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        modal.style.display = 'none';
+        modalVideo.pause();
+        document.body.style.overflow = 'auto';
+    }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.style.display === 'block') {
+        modal.style.display = 'none';
+        modalVideo.pause();
+        document.body.style.overflow = 'auto';
+    }
+});
