@@ -129,7 +129,14 @@ gsr/
    - Modify text content to match your needs
    - Adjust social media links
 
-4. **Open the Website**
+4. **Run the Website**
+   
+   **Windows (PowerShell):**
+   ```powershell
+   Start-Process index.html
+   ```
+   
+   **Alternative Methods:**
    - Double-click `index.html` or
    - Right-click and select "Open with" → Your browser
    - Or use a local server for testing
@@ -282,14 +289,24 @@ This project is open source and available for personal and commercial use.
 ### Quick Start Command
 
 To open the website immediately:
-```bash
-# Windows
+
+**Windows (PowerShell):**
+```powershell
+Start-Process index.html
+```
+
+**Windows (Command Prompt):**
+```cmd
 start index.html
+```
 
-# macOS
+**macOS:**
+```bash
 open index.html
+```
 
-# Linux
+**Linux:**
+```bash
 xdg-open index.html
 ```
 
