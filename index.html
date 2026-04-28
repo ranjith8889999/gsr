@@ -1,29 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="te">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ganta Shiva Reddy - Standing Corporator | Serving Our Community</title>
+    <title>గంట శివ రెడ్డి - స్టాండింగ్ కార్పొరేటర్ | మన సమాజానికి సేవ</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Noto+Sans+Telugu:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Translate -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'te',
+                includedLanguages: 'te,en',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 <body>
+    <!-- Google Translate Bar -->
+    <div id="google_translate_element" style="display:none;"></div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
                 <i class="fas fa-hands-helping"></i>
-                <span>Ganta Shiva Reddy</span>
+                <span>గంట శివ రెడ్డి</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#journey">Journey</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" data-te="హోమ్" data-en="Home">హోమ్</a></li>
+                <li><a href="#about" data-te="మా గురించి" data-en="About">మా గురించి</a></li>
+                <li><a href="#journey" data-te="ప్రయాణం" data-en="Journey">ప్రయాణం</a></li>
+                <li><a href="#events" data-te="కార్యక్రమాలు" data-en="Events">కార్యక్రమాలు</a></li>
+                <li><a href="#gallery" data-te="గ్యాలరీ" data-en="Gallery">గ్యాలరీ</a></li>
+                <li><a href="#contact" data-te="సంప్రదించండి" data-en="Contact">సంప్రదించండి</a></li>
             </ul>
+            <div class="lang-switcher">
+                <button id="langBtn" onclick="toggleLanguage()" title="Switch Language">
+                    <span id="langLabel">EN</span>
+                </button>
+            </div>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -37,14 +57,14 @@
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <div class="hero-image-container">
-                <img src="imagesvideos/DSC_6714.JPG" alt="Ganta Shiva Reddy" class="hero-profile-img">
+                <img src="imagesvideos/DSC_6714.JPG" alt="Ganta Siva Reddy" class="hero-profile-img">
                 <div class="hero-image-glow"></div>
             </div>
-            <h1 class="hero-title">Ganta Shiva Reddy</h1>
-            <p class="hero-subtitle">Your Standing Corporator - Building a Better Tomorrow</p>
+            <h1 class="hero-title">గంట శివ రెడ్డి</h1>
+            <p class="hero-subtitle" data-te="మీ స్టాండింగ్ కార్పొరేటర్ - మంచి రేపటిని నిర్మిస్తున్నారు" data-en="Your Standing Corporator - Building a Better Tomorrow">మీ స్టాండింగ్ కార్పొరేటర్ - మంచి రేపటిని నిర్మిస్తున్నారు</p>
             <div class="hero-buttons">
-                <a href="#events" class="btn btn-primary">Our Events</a>
-                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                <a href="#events" class="btn btn-primary" data-te="మా కార్యక్రమాలు" data-en="Our Events">మా కార్యక్రమాలు</a>
+                <a href="#contact" class="btn btn-secondary" data-te="సంప్రదించండి" data-en="Get in Touch">సంప్రదించండి</a>
             </div>
         </div>
         <div class="scroll-indicator">
@@ -56,32 +76,32 @@
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
-                <h2>About Ganta Shiva Reddy</h2>
+                <h2 data-te="గంట శివ రెడ్డి గురించి" data-en="About Ganta Siva Reddy">గంట శివ రెడ్డి గురించి</h2>
                 <div class="divider"></div>
             </div>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="imagesvideos/IMG_20251126_094058.jpg" alt="Ganta Shiva Reddy">
+                    <img src="imagesvideos/IMG_20251126_094058.jpg" alt="Ganta Siva Reddy">
                     <div class="about-image-overlay">
                         <i class="fas fa-award"></i>
                     </div>
                 </div>
                 <div class="about-text">
-                    <h3>A Vision for Progress</h3>
-                    <p>I am <strong>Ganta Shiva Reddy</strong>, your standing corporator, committed to serving our community with unwavering dedication and transparent leadership. My journey has been guided by a simple principle: development with inclusivity, progress with compassion.</p>
-                    <p>Through various community initiatives and development programs, we have touched the lives of thousands of residents, bringing positive change and fostering unity among diverse communities.</p>
+                    <h3 data-te="పురోగతికి దార్శనికత" data-en="A Vision for Progress">పురోగతికి దార్శనికత</h3>
+                    <p data-te="నేను <strong>గంట శివ రెడ్డి</strong>, మీ స్టాండింగ్ కార్పొరేటర్, అచంచలమైన నిబద్ధత మరియు పారదర్శక నాయకత్వంతో సమాజానికి సేవ చేయడానికి కట్టుబడి ఉన్నాను. నా ప్రయాణానికి ఒక సరళమైన సూత్రం మార్గదర్శనం చేసింది: కరుణతో కూడిన పురోగతితో సమగ్ర అభివృద్ధి." data-en="I am <strong>Ganta Siva Reddy</strong>, your standing corporator, committed to serving society with unwavering dedication and transparent leadership. My journey has been guided by a simple principle: Inclusive Development with Compassionate Progress.">నేను <strong>గంట శివ రెడ్డి</strong>, మీ స్టాండింగ్ కార్పొరేటర్, అచంచలమైన నిబద్ధత మరియు పారదర్శక నాయకత్వంతో సమాజానికి సేవ చేయడానికి కట్టుబడి ఉన్నాను. నా ప్రయాణానికి ఒక సరళమైన సూత్రం మార్గదర్శనం చేసింది: కరుణతో కూడిన పురోగతితో సమగ్ర అభివృద్ధి.</p>
+                    <p data-te="వివిధ సామాజిక కార్యక్రమాలు మరియు అభివృద్ధి పథకాల ద్వారా, వేలాది నివాసితుల జీవితాలను తాకాము, సానుకూల మార్పు తీసుకొచ్చాము మరియు విభిన్న సమాజాలలో ఐక్యతను పెంపొందించాము." data-en="Through various community initiatives and development programs, we have touched the lives of thousands of residents, bringing positive change and fostering unity among diverse communities.">వివిధ సామాజిక కార్యక్రమాలు మరియు అభివృద్ధి పథకాల ద్వారా, వేలాది నివాసితుల జీవితాలను తాకాము, సానుకూల మార్పు తీసుకొచ్చాము మరియు విభిన్న సమాజాలలో ఐక్యతను పెంపొందించాము.</p>
                     <div class="stats">
                         <div class="stat-item">
-                            <h4>100+</h4>
-                            <p>Families Helped</p>
+                            <h4>200+</h4>
+                            <p data-te="కుటుంబాలకు సహాయం" data-en="Families Supported">కుటుంబాలకు సహాయం</p>
                         </div>
                         <div class="stat-item">
-                            <h4>10+</h4>
-                            <p>Major Events</p>
+                            <h4>30+</h4>
+                            <p data-te="ప్రధాన కార్యక్రమాలు" data-en="Major Programs">ప్రధాన కార్యక్రమాలు</p>
                         </div>
                         <div class="stat-item">
                             <h4>100%</h4>
-                            <p>Dedication</p>
+                            <p data-te="నిబద్ధత" data-en="Dedication">నిబద్ధత</p>
                         </div>
                     </div>
                 </div>
@@ -93,57 +113,57 @@
     <section id="journey" class="journey">
         <div class="container">
             <div class="section-header">
-                <h2>Our Journey</h2>
+                <h2 data-te="మా ప్రయాణం" data-en="Our Journey">మా ప్రయాణం</h2>
                 <div class="divider"></div>
-                <p>A timeline of dedication, service, and community development</p>
+                <p data-te="నిబద్ధత, సేవ మరియు సమాజ అభివృద్ధి యొక్క కాలక్రమం" data-en="A timeline of dedication, service, and community development">నిబద్ధత, సేవ మరియు సమాజ అభివృద్ధి యొక్క కాలక్రమం</p>
             </div>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>Beginning of Service</h3>
-                        <span class="timeline-date">2022</span>
-                        <p>Ganta Shiva Reddy began his journey as a standing corporator with a vision to transform our community through inclusive development and active citizen engagement.</p>
+                        <h3 data-te="కాంగ్రెస్ పార్టీలో చేరారు" data-en="Joined Congress Party">కాంగ్రెస్ పార్టీలో చేరారు</h3>
+                        <span class="timeline-date">2013</span>
+                        <p data-te="గంట శివ రెడ్డి సమాజానికి సమగ్ర అభివృద్ధి మరియు కరుణతో కూడిన పురోగతి దృష్టితో కాంగ్రెస్ పార్టీతో తన ప్రయాణాన్ని ప్రారంభించారు." data-en="Ganta Siva Reddy began his journey with the Congress Party, driven by a vision of inclusive development and compassionate progress for the community.">గంట శివ రెడ్డి సమాజానికి సమగ్ర అభివృద్ధి మరియు కరుణతో కూడిన పురోగతి దృష్టితో కాంగ్రెస్ పార్టీతో తన ప్రయాణాన్ని ప్రారంభించారు.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>First Kotideepotsavam</h3>
+                        <h3 data-te="మొదటి కోటి దీపోత్సవం" data-en="First Koti Deepotsavam">మొదటి కోటి దీపోత్సవం</h3>
                         <span class="timeline-date">2024</span>
-                        <p>Organized the inaugural Kotideepotsavam, bringing together thousands of devotees who lit diyas with devotion and faith. This event became a symbol of unity and spiritual awakening in our community.</p>
+                        <p data-te="తొలి కోటి దీపోత్సవాన్ని నిర్వహించారు, 10,000+ భక్తులు భక్తి మరియు విశ్వాసంతో దీపాలు వెలిగించారు. సామూహిక ప్రార్థనలు మరియు సాంస్కృతిక కార్యక్రమాలు చేర్చారు. ఈ కార్యక్రమం మన సమాజంలో ఐక్యత మరియు ఆధ్యాత్మిక చైతన్యానికి చిహ్నంగా మారింది." data-en="Organized the inaugural Koti Deepotsavam, bringing together 10,000+ devotees who lit diyas with devotion and faith. Included mass prayers and cultural programs. This event became a symbol of unity and spiritual awakening in our community.">తొలి కోటి దీపోత్సవాన్ని నిర్వహించారు, 10,000+ భక్తులు భక్తి మరియు విశ్వాసంతో దీపాలు వెలిగించారు. సామూహిక ప్రార్థనలు మరియు సాంస్కృతిక కార్యక్రమాలు చేర్చారు. ఈ కార్యక్రమం మన సమాజంలో ఐక్యత మరియు ఆధ్యాత్మిక చైతన్యానికి చిహ్నంగా మారింది.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>Reddys Community Vanabhojanalu</h3>
+                        <h3 data-te="మొదటి కమ్యూనిటీ వనభోజనం (30 సంవత్సరాల తర్వాత)" data-en="First Community Vanabhojanam (after 30 years)">మొదటి కమ్యూనిటీ వనభోజనం (30 సంవత్సరాల తర్వాత)</h3>
                         <span class="timeline-date">2024</span>
-                        <p>Successfully conducted Vanabhojanalu for the Reddy community, fostering stronger bonds and celebrating our rich cultural heritage with traditional gatherings and community feasts.</p>
+                        <p data-te="30 సంవత్సరాలలో మొదటిసారి కమ్యూనిటీ వనభోజనాన్ని విజయవంతంగా నిర్వహించారు, 4,000+ పాల్గొనేవారిని సంప్రదాయ విందు మరియు సాంస్కృతిక వేడుక కోసం ఒకచోట చేర్చారు." data-en="Successfully conducted the first Community Vanabhojanam in 30 years, bringing together 4,000+ participants for a traditional feast and cultural celebration that strengthened community bonds.">30 సంవత్సరాలలో మొదటిసారి కమ్యూనిటీ వనభోజనాన్ని విజయవంతంగా నిర్వహించారు, 4,000+ పాల్గొనేవారిని సంప్రదాయ విందు మరియు సాంస్కృతిక వేడుక కోసం ఒకచోట చేర్చారు.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>Second Kotideepotsavam</h3>
+                        <h3 data-te="రెండవ కోటి దీపోత్సవం" data-en="Second Koti Deepotsavam">రెండవ కోటి దీపోత్సవం</h3>
                         <span class="timeline-date">2025</span>
-                        <p>Organized an even bigger and more successful Kotideepotsavam, with increased participation and community involvement, creating a festival of lights that illuminated hearts and homes.</p>
+                        <p data-te="20,000+ భక్తులు పాల్గొనడంతో పెద్ద ఎత్తున నిర్వహించారు. మరింత గొప్పైన వెలుగుల పండుగ ద్వారా సమాజమంతటా భక్తి మరియు ఐక్యతను ప్రోత్సహించారు." data-en="Conducted on a larger scale with 20,000+ devotees participating. Promoted devotion and unity across the community through an even grander festival of lights.">20,000+ భక్తులు పాల్గొనడంతో పెద్ద ఎత్తున నిర్వహించారు. మరింత గొప్పైన వెలుగుల పండుగ ద్వారా సమాజమంతటా భక్తి మరియు ఐక్యతను ప్రోత్సహించారు.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>Continued Community Service</h3>
+                        <h3 data-te="కొనసాగుతున్న సమాజ సేవ" data-en="Continued Community Service">కొనసాగుతున్న సమాజ సేవ</h3>
                         <span class="timeline-date">2025</span>
-                        <p>Conducted the second edition of Reddys Community Vanabhojanalu, further strengthening community bonds and preserving our cultural traditions for future generations.</p>
+                        <p data-te="రెడ్డీస్ కమ్యూనిటీ వనభోజనాల రెండవ ఎడిషన్ నిర్వహించారు, సమాజ బంధాలను మరింత బలపరిచారు మరియు భవిష్యత్ తరాల కోసం మన సాంస్కృతిక సంప్రదాయాలను కాపాడారు." data-en="Conducted the second edition of Reddys Community Vanabhojanalu, further strengthening community bonds and preserving our cultural traditions for future generations.">రెడ్డీస్ కమ్యూనిటీ వనభోజనాల రెండవ ఎడిషన్ నిర్వహించారు, సమాజ బంధాలను మరింత బలపరిచారు మరియు భవిష్యత్ తరాల కోసం మన సాంస్కృతిక సంప్రదాయాలను కాపాడారు.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>Chalivendram - Water Service Initiative</h3>
+                        <h3 data-te="చలివేంద్రం - నీటి సేవా కార్యక్రమం" data-en="Chalivendram - Water Service Initiative">చలివేంద్రం - నీటి సేవా కార్యక్రమం</h3>
                         <span class="timeline-date">2023, 2024, 2025, 2026</span>
-                        <p>Launched Chalivendram, a dedicated water service initiative providing clean drinking water to people across 5 major locations: Temples, Public Gatherings, Community Centers, Bus Stops, and Market Areas. This service has helped thousands of people stay hydrated and healthy.</p>
+                        <p data-te="చలివేంద్రాన్ని ప్రారంభించారు, గుళ్ళు, పబ్లిక్ సమావేశాలు, కమ్యూనిటీ సెంటర్లు, బస్ స్టాప్‌లు మరియు మార్కెట్ ప్రాంతాలతో సహా 5 ప్రధాన స్థానాల్లో ప్రజలకు స్వచ్ఛమైన తాగునీటిని అందించే నీటి సేవా కార్యక్రమం. ఈ సేవ వేలాది మంది ప్రజలు ఆరోగ్యంగా ఉండటానికి సహాయపడింది." data-en="Launched Chalivendram, a dedicated water service initiative providing clean drinking water to people across 5 major locations: Temples, Public Gatherings, Community Centers, Bus Stops, and Market Areas. This service has helped thousands of people stay hydrated and healthy.">చలివేంద్రాన్ని ప్రారంభించారు, గుళ్ళు, పబ్లిక్ సమావేశాలు, కమ్యూనిటీ సెంటర్లు, బస్ స్టాప్‌లు మరియు మార్కెట్ ప్రాంతాలతో సహా 5 ప్రధాన స్థానాల్లో ప్రజలకు స్వచ్ఛమైన తాగునీటిని అందించే నీటి సేవా కార్యక్రమం. ఈ సేవ వేలాది మంది ప్రజలు ఆరోగ్యంగా ఉండటానికి సహాయపడింది.</p>
                     </div>
                 </div>
             </div>
@@ -154,9 +174,9 @@
     <section id="events" class="events">
         <div class="container">
             <div class="section-header">
-                <h2>Signature Events</h2>
+                <h2 data-te="ప్రత్యేక కార్యక్రమాలు" data-en="Signature Events">ప్రత్యేక కార్యక్రమాలు</h2>
                 <div class="divider"></div>
-                <p>Bringing our community together through memorable celebrations</p>
+                <p data-te="స్మరణీయమైన వేడుకల ద్వారా మన సమాజాన్ని ఒక్కతాటిపై తీసుకొస్తున్నాం" data-en="Bringing our community together through memorable celebrations">స్మరణీయమైన వేడుకల ద్వారా మన సమాజాన్ని ఒక్కతాటిపై తీసుకొస్తున్నాం</p>
             </div>
             <div class="events-grid">
                 <!-- Kotideepotsavam Event -->
@@ -166,19 +186,19 @@
                         <div class="event-badge">Featured</div>
                     </div>
                     <div class="event-content">
-                        <h3>Kotideepotsavam</h3>
+                        <h3>కోటి దీపోత్సవం</h3>
                         <div class="event-meta">
                             <span><i class="fas fa-calendar"></i> 2024 & 2025</span>
-                            <span><i class="fas fa-users"></i> 30,000+ Participants</span>
+                            <span><i class="fas fa-users"></i> <span data-te="30,000+ పాల్గొనేవారు" data-en="30,000+ Participants">30,000+ పాల్గొనేవారు</span></span>
                         </div>
-                        <p>An extraordinary celebration where thousands of devotees gathered to light diyas, creating a spectacular festival of lights. This event has become a cornerstone of our community's spiritual and cultural identity, bringing together people from all walks of life in a beautiful display of faith and unity.</p>
+                        <p data-te="వేలాది భక్తులు దీపాలు వెలిగించడానికి సమావేశమైన అసాధారణమైన వేడుక, అద్భుతమైన వెలుగుల పండుగను సృష్టించింది. ఈ కార్యక్రమం మన సమాజ ఆధ్యాత్మిక మరియు సాంస్కృతిక గుర్తింపుకు మూలస్తంభంగా మారింది." data-en="An extraordinary celebration where thousands of devotees gathered to light diyas, creating a spectacular festival of lights. This event has become a cornerstone of our community's spiritual and cultural identity.">వేలాది భక్తులు దీపాలు వెలిగించడానికి సమావేశమైన అసాధారణమైన వేడుక, అద్భుతమైన వెలుగుల పండుగను సృష్టించింది. ఈ కార్యక్రమం మన సమాజ ఆధ్యాత్మిక మరియు సాంస్కృతిక గుర్తింపుకు మూలస్తంభంగా మారింది.</p>
                         <div class="event-highlights">
-                            <h4>Highlights:</h4>
+                            <h4 data-te="విశేషాలు:" data-en="Highlights:">విశేషాలు:</h4>
                             <ul>
-                                <li><i class="fas fa-check"></i> Thousands of diyas lit simultaneously</li>
-                                <li><i class="fas fa-check"></i> Community prayers and cultural programs</li>
-                                <li><i class="fas fa-check"></i> Free distribution of diyas and prasadam</li>
-                                <li><i class="fas fa-check"></i> Traditional music and devotional songs</li>
+                                <li><i class="fas fa-check"></i> <span data-te="వేలాది దీపాలు ఒకేసారి వెలిగించారు" data-en="Thousands of diyas lit simultaneously">వేలాది దీపాలు ఒకేసారి వెలిగించారు</span></li>
+                                <li><i class="fas fa-check"></i> <span data-te="సామూహిక ప్రార్థనలు మరియు సాంస్కృతిక కార్యక్రమాలు" data-en="Community prayers and cultural programs">సామూహిక ప్రార్థనలు మరియు సాంస్కృతిక కార్యక్రమాలు</span></li>
+                                <li><i class="fas fa-check"></i> <span data-te="దీపాలు మరియు ప్రసాదం ఉచిత పంపిణీ" data-en="Free distribution of diyas and prasadam">దీపాలు మరియు ప్రసాదం ఉచిత పంపిణీ</span></li>
+                                <li><i class="fas fa-check"></i> <span data-te="సంప్రదాయ సంగీతం మరియు భక్తి గీతాలు" data-en="Traditional music and devotional songs">సంప్రదాయ సంగీతం మరియు భక్తి గీతాలు</span></li>
                             </ul>
                         </div>
                     </div>
@@ -191,19 +211,19 @@
                         <div class="event-badge">Popular</div>
                     </div>
                     <div class="event-content">
-                        <h3>Reddys Community Vanabhojanalu</h3>
+                        <h3>రెడ్డీస్ కమ్యూనిటీ వనభోజనాలు</h3>
                         <div class="event-meta">
                             <span><i class="fas fa-calendar"></i> 2024 & 2025</span>
-                            <span><i class="fas fa-users"></i> 1000+ Members</span>
+                            <span><i class="fas fa-users"></i> <span data-te="5,000+ పాల్గొనేవారు" data-en="5,000+ Participants">5,000+ పాల్గొనేవారు</span></span>
                         </div>
-                        <p>A grand gathering of the Reddy community that celebrates our rich cultural heritage through traditional Vanabhojanalu. This event strengthens community bonds and provides an opportunity for families to come together, share traditional cuisine, and preserve our ancestral customs for future generations.</p>
+                        <p data-te="సంప్రదాయ వనభోజనాల ద్వారా మన గొప్ప సాంస్కృతిక వారసత్వాన్ని జరుపుకునే రెడ్డి సమాజ గ్రాండ్ సమావేశం. ఈ కార్యక్రమం సమాజ బంధాలను బలపరుస్తుంది మరియు కుటుంబాలు ఒకచోట చేరడానికి, సంప్రదాయ వంటకాలు పంచుకోవడానికి అవకాశం కల్పిస్తుంది." data-en="A grand gathering of the Reddy community that celebrates our rich cultural heritage through traditional Vanabhojanalu. This event strengthens community bonds and provides an opportunity for families to come together, share traditional cuisine, and preserve our ancestral customs for future generations.">సంప్రదాయ వనభోజనాల ద్వారా మన గొప్ప సాంస్కృతిక వారసత్వాన్ని జరుపుకునే రెడ్డి సమాజ గ్రాండ్ సమావేశం. ఈ కార్యక్రమం సమాజ బంధాలను బలపరుస్తుంది మరియు కుటుంబాలు ఒకచోట చేరడానికి, సంప్రదాయ వంటకాలు పంచుకోవడానికి అవకాశం కల్పిస్తుంది.</p>
                         <div class="event-highlights">
-                            <h4>Highlights:</h4>
+                            <h4 data-te="విశేషాలు:" data-en="Highlights:">విశేషాలు:</h4>
                             <ul>
-                                <li><i class="fas fa-check"></i> Traditional community feast</li>
-                                <li><i class="fas fa-check"></i> Cultural performances and folk arts</li>
-                                <li><i class="fas fa-check"></i> Elder's blessings and wisdom sharing</li>
-                                <li><i class="fas fa-check"></i> Networking and community bonding</li>
+                                <li><i class="fas fa-check"></i> <span data-te="సంప్రదాయ కమ్యూనిటీ విందు" data-en="Traditional community feast">సంప్రదాయ కమ్యూనిటీ విందు</span></li>
+                                <li><i class="fas fa-check"></i> <span data-te="సాంస్కృతిక ప్రదర్శనలు మరియు జానపద కళలు" data-en="Cultural performances and folk arts">సాంస్కృతిక ప్రదర్శనలు మరియు జానపద కళలు</span></li>
+                                <li><i class="fas fa-check"></i> <span data-te="పెద్దల ఆశీర్వాదాలు మరియు జ్ఞానం పంచుకోవడం" data-en="Elder's blessings and wisdom sharing">పెద్దల ఆశీర్వాదాలు మరియు జ్ఞానం పంచుకోవడం</span></li>
+                                <li><i class="fas fa-check"></i> <span data-te="నెట్‌వర్కింగ్ మరియు కమ్యూనిటీ బంధం" data-en="Networking and community bonding">నెట్‌వర్కింగ్ మరియు కమ్యూనిటీ బంధం</span></li>
                             </ul>
                         </div>
                     </div>
@@ -216,17 +236,17 @@
     <section id="gallery" class="gallery">
         <div class="container">
             <div class="section-header">
-                <h2>Event Gallery</h2>
+                <h2 data-te="కార్యక్రమ గ్యాలరీ" data-en="Event Gallery">కార్యక్రమ గ్యాలరీ</h2>
                 <div class="divider"></div>
-                <p>Capturing moments of joy, devotion, and community spirit</p>
+                <p data-te="ఆనందం, భక్తి మరియు కమ్యూనిటీ స్ఫూర్తి యొక్క క్షణాలను చిత్రీకరించడం" data-en="Capturing moments of joy, devotion, and community spirit">ఆనందం, భక్తి మరియు కమ్యూనిటీ స్ఫూర్తి యొక్క క్షణాలను చిత్రీకరించడం</p>
             </div>
             <div class="gallery-tabs">
-                <button class="tab-btn active" data-tab="all">All</button>
-                <button class="tab-btn" data-tab="chalivendram">Chalivendram</button>
-                <button class="tab-btn" data-tab="kotideepotsavam">Kotideepotsavam</button>
-                <button class="tab-btn" data-tab="vanbhojanlu">Vanbhojanlu</button>
-                <button class="tab-btn" data-tab="otherimages">Other Images</button>
-                <button class="tab-btn" data-tab="videos">Videos</button>
+                <button class="tab-btn active" data-tab="all" data-te="అన్నీ" data-en="All">అన్నీ</button>
+                <button class="tab-btn" data-tab="chalivendram" data-te="చలివేంద్రం" data-en="Chalivendram">చలివేంద్రం</button>
+                <button class="tab-btn" data-tab="kotideepotsavam" data-te="కోటి దీపోత్సవం" data-en="Kotideepotsavam">కోటి దీపోత్సవం</button>
+                <button class="tab-btn" data-tab="vanbhojanlu" data-te="వనభోజనాలు" data-en="Vanbhojanlu">వనభోజనాలు</button>
+                <button class="tab-btn" data-tab="otherimages" data-te="ఇతర చిత్రాలు" data-en="Other Images">ఇతర చిత్రాలు</button>
+                <button class="tab-btn" data-tab="videos" data-te="వీడియోలు" data-en="Videos">వీడియోలు</button>
             </div>
             <div class="gallery-grid">
                 <!-- Chalivendram Images -->
@@ -417,38 +437,38 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
-                <h2>Get in Touch</h2>
+                <h2 data-te="సంప్రదించండి" data-en="Get in Touch">సంప్రదించండి</h2>
                 <div class="divider"></div>
-                <p>We're here to serve you. Reach out for any assistance or suggestions</p>
+                <p data-te="మేము మీకు సేవ చేయడానికి ఇక్కడ ఉన్నాం. ఏదైనా సహాయం లేదా సూచనల కోసం సంప్రదించండి" data-en="We're here to serve you. Reach out for any assistance or suggestions">మేము మీకు సేవ చేయడానికి ఇక్కడ ఉన్నాం. ఏదైనా సహాయం లేదా సూచనల కోసం సంప్రదించండి</p>
             </div>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Contact Information</h3>
+                    <h3 data-te="సంప్రదింపు సమాచారం" data-en="Contact Information">సంప్రదింపు సమాచారం</h3>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
-                            <h4>Office Address</h4>
-                            <p>Ward Office, Community Center<br>Your Area, City - 500XXX</p>
+                            <h4 data-te="కార్యాలయ చిరునామా" data-en="Office Address">కార్యాలయ చిరునామా</h4>
+                            <p>Mahadevpuram, 277 Division,<br>Quthbullapur, Gajularamaram</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
                         <div>
-                            <h4>Phone</h4>
+                            <h4 data-te="ఫోన్" data-en="Phone">ఫోన్</h4>
                             <p>+91 9502793040</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <div>
-                            <h4>Email</h4>
+                            <h4 data-te="ఇమెయిల్" data-en="Email">ఇమెయిల్</h4>
                             <p>shivareddy996@gmail.com</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-clock"></i>
                         <div>
-                            <h4>Helpline Hours</h4>
+                            <h4 data-te="హెల్ప్‌లైన్ సమయాలు" data-en="Helpline Hours">హెల్ప్‌లైన్ సమయాలు</h4>
                             <p>24 * 7</p>
                         </div>
                     </div>
@@ -460,21 +480,21 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <h3>Send a Message</h3>
+                    <h3 data-te="సందేశం పంపండి" data-en="Send a Message">సందేశం పంపండి</h3>
                     <form>
                         <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                            <input type="text" id="inp-name" placeholder="మీ పేరు" data-te-placeholder="మీ పేరు" data-en-placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
+                            <input type="email" id="inp-email" placeholder="మీ ఇమెయిల్" data-te-placeholder="మీ ఇమెయిల్" data-en-placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <input type="tel" placeholder="Your Phone">
+                            <input type="tel" id="inp-phone" placeholder="మీ ఫోన్" data-te-placeholder="మీ ఫోన్" data-en-placeholder="Your Phone">
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                            <textarea id="inp-msg" placeholder="మీ సందేశం" data-te-placeholder="మీ సందేశం" data-en-placeholder="Your Message" rows="5" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-primary" data-te="సందేశం పంపండి" data-en="Send Message">సందేశం పంపండి</button>
                     </form>
                 </div>
             </div>
@@ -486,21 +506,21 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>About</h4>
-                    <p>Committed to serving our community with dedication, transparency, and a vision for inclusive development.</p>
+                    <h4 data-te="మా గురించి" data-en="About">మా గురించి</h4>
+                    <p data-te="నిబద్ధత, పారదర్శకత మరియు సమగ్ర అభివృద్ధి దృష్టితో మన సమాజానికి సేవ చేయడానికి కట్టుబడి ఉన్నాం." data-en="Committed to serving our community with dedication, transparency, and a vision for inclusive development.">నిబద్ధత, పారదర్శకత మరియు సమగ్ర అభివృద్ధి దృష్టితో మన సమాజానికి సేవ చేయడానికి కట్టుబడి ఉన్నాం.</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h4 data-te="త్వరిత లింక్‌లు" data-en="Quick Links">త్వరిత లింక్‌లు</h4>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#events">Events</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#home" data-te="హోమ్" data-en="Home">హోమ్</a></li>
+                        <li><a href="#about" data-te="మా గురించి" data-en="About">మా గురించి</a></li>
+                        <li><a href="#events" data-te="కార్యక్రమాలు" data-en="Events">కార్యక్రమాలు</a></li>
+                        <li><a href="#contact" data-te="సంప్రదించండి" data-en="Contact">సంప్రదించండి</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Connect</h4>
-                    <p>Stay updated with our latest initiatives and events</p>
+                    <h4 data-te="అనుసంధానం" data-en="Connect">అనుసంధానం</h4>
+                    <p data-te="మా తాజా కార్యక్రమాలు మరియు వేడుకలతో అప్‌డేట్‌గా ఉండండి" data-en="Stay updated with our latest initiatives and events">మా తాజా కార్యక్రమాలు మరియు వేడుకలతో అప్‌డేట్‌గా ఉండండి</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -509,7 +529,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Ganta Shiva Reddy - Standing Corporator. All rights reserved. | Serving Our Community</p>
+                <p data-te="&copy; 2026 గంట శివ రెడ్డి - స్టాండింగ్ కార్పొరేటర్. అన్ని హక్కులు రిజర్వ్ చేయబడ్డాయి. | మన సమాజానికి సేవ" data-en="&copy; 2026 Ganta Siva Reddy - Standing Corporator. All rights reserved. | Serving Our Community">&copy; 2026 గంట శివ రెడ్డి - స్టాండింగ్ కార్పొరేటర్. అన్ని హక్కులు రిజర్వ్ చేయబడ్డాయి. | మన సమాజానికి సేవ</p>
             </div>
         </div>
     </footer>

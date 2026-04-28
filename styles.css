@@ -20,7 +20,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Noto Sans Telugu', 'Poppins', sans-serif;
     line-height: 1.6;
     color: var(--text-dark);
     overflow-x: hidden;
@@ -114,6 +114,50 @@ html {
 
 .nav-menu a:hover {
     color: var(--primary-color);
+}
+
+/* Language Switcher */
+.lang-switcher {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.lang-switcher button {
+    background: var(--secondary-color);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 16px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.lang-switcher button:hover {
+    background: var(--primary-color);
+}
+
+/* Google Translate bar hide default widget chrome */
+.goog-te-banner-frame,
+.goog-te-menu-frame {
+    display: none !important;
+}
+body {
+    top: 0 !important;
+}
+.goog-te-gadget-icon {
+    display: none !important;
+}
+.goog-te-gadget-simple {
+    border: none !important;
+    background: transparent !important;
+    font-size: 0 !important;
+}
+.VIpgJd-ZVi9od-ORHb-OEVmcd {
+    display: none !important;
 }
 
 .hamburger {
@@ -1079,6 +1123,11 @@ section {
 
     .hamburger {
         display: flex;
+    }
+
+    .lang-switcher button {
+        padding: 5px 12px;
+        font-size: 0.78rem;
     }
 
     .nav-menu {

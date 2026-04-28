@@ -1,4 +1,47 @@
-// Mobile Menu Toggle
+// ===== Language Switcher (Telugu / English) =====
+let currentLang = 'te'; // Default: Telugu
+
+function applyLanguage(lang) {
+    currentLang = lang;
+    document.documentElement.lang = lang;
+
+    // Update all elements with data-te / data-en
+    document.querySelectorAll('[data-te], [data-en]').forEach(el => {
+        const text = el.getAttribute('data-' + lang);
+        if (text !== null) {
+            // Use innerHTML so <strong> tags inside work
+            el.innerHTML = text;
+        }
+    });
+
+    // Update input/textarea placeholders
+    document.querySelectorAll('[data-te-placeholder], [data-en-placeholder]').forEach(el => {
+        const ph = el.getAttribute('data-' + lang + '-placeholder');
+        if (ph !== null) el.placeholder = ph;
+    });
+
+    // Update button label
+    const langLabel = document.getElementById('langLabel');
+    if (langLabel) langLabel.textContent = lang === 'te' ? 'EN' : 'TE';
+
+    // Update page title
+    if (lang === 'te') {
+        document.title = 'గంట శివ రెడ్డి - స్టాండింగ్ కార్పొరేటర్ | మన సమాజానికి సేవ';
+    } else {
+        document.title = 'Ganta Siva Reddy - Standing Corporator | Serving Our Community';
+    }
+}
+
+function toggleLanguage() {
+    applyLanguage(currentLang === 'te' ? 'en' : 'te');
+}
+
+// Apply Telugu by default on load
+document.addEventListener('DOMContentLoaded', () => {
+    applyLanguage('te');
+});
+
+// ===== Mobile Menu Toggle =====
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
